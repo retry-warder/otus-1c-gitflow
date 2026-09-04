@@ -1,29 +1,29 @@
 @echo off
-chcp 65001 >nul
 :: ---------------------------------------------------------------
-:: –°–±–æ—Ä–∫–∞ —Ä–µ–ª–∏–∑–∞ (cf) –∏–∑ –≤–µ—Ç–∫–∏ master: vrunner compile
-:: –ò—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–µ: build_release.bat 1.0.0
+:: ë°Æ‡™† ‡•´®ß† (cf) ®ß ¢•‚™® master: vrunner compile
+:: à·ØÆ´ÏßÆ¢†≠®•: build_release.bat 1.0.0
 :: ---------------------------------------------------------------
-if "%~1"=="" ( echo –£–∫–∞–∂–∏—Ç–µ –≤–µ—Ä—Å–∏—é —Ä–µ–ª–∏–∑–∞, –Ω–∞–ø—Ä–∏–º–µ—Ä: build_release.bat 1.0.0 & exit /b 1 )
+if "%~1"=="" ( echo ì™†¶®‚• ¢•‡·®Ó ‡•´®ß†, ≠†Ø‡®¨•‡: build_release.bat 1.0.0 & exit /b 1 )
 set VERSION=%~1
 set REPO=D:/DATA/BASE 1C/OTUS_DEMO_REP/
 set BUILD_BASE=D:/DATA/BASE 1C/OTUS_DEMO_BUILD
 
 cd /d "%REPO%" || exit /b 1
 
-echo [1/4] –ê–∫—Ç—É–∞–ª–∏–∑–∞—Ü–∏—è master
+echo [1/4] Ä™‚„†´®ß†Ê®Ô master
 git checkout master || exit /b 1
 git pull origin master || exit /b 1
 
-echo [2/4] –°–ª—É–∂–µ–±–Ω–∞—è –±–∞–∑–∞ –¥–ª—è —Å–±–æ—Ä–∫–∏
-if not exist "%BUILD_BASE%\1Cv8.1CD" vrunner init-dev --ibconnection /F"%BUILD_BASE%"
+echo [2/4] ë´„¶•°≠†Ô °†ß† §´Ô ·°Æ‡™®
+if not exist "%BUILD_BASE%\1Cv8.1CD" call vrunner init-dev --ibconnection /F"%BUILD_BASE%"
 
-echo [3/4] –°–±–æ—Ä–∫–∞ cf –∏–∑ –∏—Å—Ö–æ–¥–Ω–∏–∫–æ–≤ src
+echo [3/4] ë°Æ‡™† cf ®ß ®·ÂÆ§≠®™Æ¢ src
 if not exist build mkdir build
-vrunner compile --src ./src --out ./build/release-%VERSION%.cf --ibconnection /F"%BUILD_BASE%" || exit /b 1
+call vrunner compile --src ./src --out ./build/release-%VERSION%.cf --ibconnection /F"%BUILD_BASE%"
+if errorlevel 1 exit /b 1
 
-echo [4/4] –¢–µ–≥ —Ä–µ–ª–∏–∑–∞
+echo [4/4] í•£ ‡•´®ß†
 git tag -a v%VERSION% -m "Release %VERSION%"
 git push origin v%VERSION%
 
-echo –ì–æ—Ç–æ–≤–æ: build\release-%VERSION%.cf  -- –ø—Ä–∏–ª–æ–∂–∏—Ç–µ –∫ GitHub Release v%VERSION%.
+echo ÉÆ‚Æ¢Æ: build\release-%VERSION%.cf -- Ø‡®´Æ¶®‚• ™ GitHub Release v%VERSION%.
