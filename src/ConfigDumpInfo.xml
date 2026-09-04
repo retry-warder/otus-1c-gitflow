@@ -595,8 +595,8 @@
 		</Metadata>
 		<Metadata name="Document.Заказ.Form.ФормаДокумента" id="eb4d6024-f5e8-48ce-87cc-51aa1d8bdc00" configVersion="a8aa6fff17127041b5602ecae81dfcac00000000"/>
 		<Metadata name="Document.Заказ.Form.ФормаДокумента.Form" id="eb4d6024-f5e8-48ce-87cc-51aa1d8bdc00.0" configVersion="8a47e199592bd34e9f5d55e1ef11008e00000000"/>
-		<Metadata name="Document.Заказ.Form.ФормаСписка" id="f40cab4d-4530-47d9-a6b3-3337d13be2b9" configVersion="80aaceb2ba0cb745bbf5a53cf520e5d000000000"/>
-		<Metadata name="Document.Заказ.Form.ФормаСписка.Form" id="f40cab4d-4530-47d9-a6b3-3337d13be2b9.0" configVersion="801a17031ffdf24799cfd9304c1b7a7600000000"/>
+		<Metadata name="Document.Заказ.Form.ФормаСписка" id="f40cab4d-4530-47d9-a6b3-3337d13be2b9" configVersion="5bf3de321613e34fac41697618f104c100000000"/>
+		<Metadata name="Document.Заказ.Form.ФормаСписка.Form" id="f40cab4d-4530-47d9-a6b3-3337d13be2b9.0" configVersion="13f08820d64cbc43a6036b8c260499d900000000"/>
 		<Metadata name="Document.Заказ.ObjectModule" id="45403bd4-e824-44fd-b1e3-50cd17a6a658.0" configVersion="c506180984e01645978773a47cb74cdf00000000"/>
 		<Metadata name="Document.ОперацияПоУчетуТоваров" id="bbdebd1d-3f45-48a1-9d0b-d5faa4c52e00" configVersion="3a314d33c35c754195b0e52037a60ed200000000">
 			<Metadata name="Document.ОперацияПоУчетуТоваров.Attribute.Организация" id="0bb7fee3-f208-4f91-8392-bf82f640a246"/>
