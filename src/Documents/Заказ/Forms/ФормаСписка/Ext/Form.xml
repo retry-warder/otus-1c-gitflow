@@ -112,6 +112,11 @@
 					<ContextMenu name="ПокупательКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="ПокупательРасширеннаяПодсказка" id="16"/>
 				</LabelField>
+				<LabelField name="TST" id="47">
+					<DataPath>Список.TST</DataPath>
+					<ContextMenu name="TSTКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="TSTРасширеннаяПодсказка" id="49"/>
+				</LabelField>
 				<LabelField name="Склад" id="17">
 					<DataPath>Список.Склад</DataPath>
 					<FixingInTable>Left</FixingInTable>
