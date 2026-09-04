@@ -16,7 +16,7 @@ git checkout %BRANCH% || exit /b 1
 git pull origin %BRANCH%
 
 echo [2/4] ????? ????? ???? ?????? (gitsync)
-call gitsync sync --storage-user %STORAGE_USER% --storage-pwd "%STORAGE_PWD%" "%STORAGE%" "%REPO%src/"
+call gitsync sync --storage-user %STORAGE_USER% "%STORAGE%" "%REPO%src/"
 if errorlevel 1 exit /b 1
 
 echo [3/4] ???? ???????:
