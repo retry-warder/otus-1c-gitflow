@@ -1,6 +1,7 @@
 @echo off
+chcp 866 >nul
 :: ---------------------------------------------------------------
-:: Синхронизация хранилища 1С в ветку storage_1c (GitFlow)
+:: ?????????? ?????? 1? ? ???? storage_1c (GitFlow)
 :: ---------------------------------------------------------------
 set STORAGE=D:/DATA/BASE 1C/OTUS_DEMO_STORAGE/
 set REPO=D:/DATA/BASE 1C/OTUS_DEMO_REP/
@@ -10,20 +11,20 @@ set BRANCH=storage_1c
 
 cd /d "%REPO%" || exit /b 1
 
-echo [1/4] Переключение на ветку %BRANCH%
+echo [1/4] ???????? ?? ???? %BRANCH%
 git checkout %BRANCH% || exit /b 1
 git pull origin %BRANCH%
 
-echo [2/4] Выгрузка новых версий хранилища (gitsync)
+echo [2/4] ????? ????? ???? ?????? (gitsync)
 call gitsync sync --storage-user %STORAGE_USER% --storage-pwd "%STORAGE_PWD%" "%STORAGE%" "%REPO%src/"
 if errorlevel 1 exit /b 1
 
-echo [3/4] Новые коммиты:
+echo [3/4] ???? ???????:
 git log --oneline branch_sync_hran..%BRANCH%
 
-echo [4/4] Отправка в origin и обновление служебной ветки
+echo [4/4] ????? ? origin ? ?????????? ?????? ???
 git push origin %BRANCH% || exit /b 1
 git branch -f branch_sync_hran %BRANCH%
 git push -f origin branch_sync_hran
 
-echo Готово. Откройте Pull Request %BRANCH% -^> develop.
+echo ????. ???? Pull Request %BRANCH% -^> develop.
