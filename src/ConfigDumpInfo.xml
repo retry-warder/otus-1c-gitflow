@@ -618,7 +618,8 @@
 		<Metadata name="Document.Оплата.Form.ФормаДокумента.Form" id="86a4f443-b90a-4c6d-a224-cba9bf2a547d.0" configVersion="d4ecdd9a517d5146b95f685b886aaf9200000000"/>
 		<Metadata name="Document.Оплата.Help" id="6909b902-801b-49e1-87aa-a0910e500953.1" configVersion="19b2aee3826d524a9fb50bbfb1c5b75d00000000"/>
 		<Metadata name="Document.Оплата.ObjectModule" id="6909b902-801b-49e1-87aa-a0910e500953.0" configVersion="b007a6f240fbc643bd3cae48a1573af700000000"/>
-		<Metadata name="Document.ПоступлениеДенег" id="fd455a27-23d6-458c-827d-779819b10f57" configVersion="cae35cccb63fa24c8908fd7b3a1603ef00000000">
+		<Metadata name="Document.ПоступлениеДенег" id="fd455a27-23d6-458c-827d-779819b10f57" configVersion="c397b4492b6d6f4bbd93c7c30679f01a00000000">
+			<Metadata name="Document.ПоступлениеДенег.Attribute.TST" id="1f3e61f9-c04c-418b-91d5-e6a0a7eaebce"/>
 			<Metadata name="Document.ПоступлениеДенег.Attribute.РасчетныйСчет" id="1f6d6046-8499-4780-887a-7103ff0b7a91"/>
 			<Metadata name="Document.ПоступлениеДенег.Attribute.Покупатель" id="2c6b8c3c-2545-4118-823e-80f10ca8119f"/>
 			<Metadata name="Document.ПоступлениеДенег.Attribute.Сумма" id="4cbc7bfd-b1ae-4101-af5b-8427df8a387c"/>
