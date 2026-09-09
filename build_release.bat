@@ -1,30 +1,30 @@
 @echo off
 chcp 866 >nul
 :: ---------------------------------------------------------------
-:: ?????????? ?????? 1? ? ???? storage_1c (GitFlow)
+:: Сборка релиза (cf) из ветки master: vrunner compile
+:: Использование: build_release.bat 1.0.0
 :: ---------------------------------------------------------------
-set STORAGE=D:/DATA/BASE 1C/OTUS_DEMO_STORAGE/
+if "%~1"=="" ( echo Укажите версию релиза, например: build_release.bat 1.0.0 & exit /b 1 )
+set VERSION=%~1
 set REPO=D:/DATA/BASE 1C/OTUS_DEMO_REP/
-set STORAGE_USER=Admin
-set STORAGE_PWD=
-set BRANCH=storage_1c
+set BUILD_BASE=D:/DATA/BASE 1C/OTUS_DEMO_BUILD
 
 cd /d "%REPO%" || exit /b 1
 
-echo [1/4] ???????? ?? ???? %BRANCH%
-git checkout %BRANCH% || exit /b 1
-git pull origin %BRANCH%
+echo [1/4] Актуализация master
+git checkout master || exit /b 1
+git pull origin master || exit /b 1
 
-echo [2/4] ????? ????? ???? ?????? (gitsync)
-call gitsync sync --storage-user %STORAGE_USER% "%STORAGE%" "%REPO%src/"
+echo [2/4] Служебная база для сборки
+if not exist "%BUILD_BASE%\1Cv8.1CD" call vrunner init-dev --ibconnection /F"%BUILD_BASE%"
+
+echo [3/4] Сборка cf из исходников src
+if not exist build mkdir build
+call vrunner compile --src ./src --out ./build/release-%VERSION%.cf --ibconnection /F"%BUILD_BASE%"
 if errorlevel 1 exit /b 1
 
-echo [3/4] ???? ???????:
-git log --oneline branch_sync_hran..%BRANCH%
+echo [4/4] Тег релиза
+git tag -a v%VERSION% -m "Release %VERSION%"
+git push origin v%VERSION%
 
-echo [4/4] ????? ? origin ? ?????????? ?????? ???
-git push origin %BRANCH% || exit /b 1
-git branch -f branch_sync_hran %BRANCH%
-git push -f origin branch_sync_hran
-
-echo ????. ???? Pull Request %BRANCH% -^> develop.
+echo Готово: build\release-%VERSION%.cf -- приложите к GitHub Release v%VERSION%.
