@@ -28,6 +28,7 @@
 		<Metadata name="AccumulationRegister.ТоварныеЗапасы.Help" id="3d63bfa3-859a-4aa5-b357-410f077b41b8.0" configVersion="a15d6b323b95ea49a5cacb4ed1ce8eb800000000"/>
 		<Metadata name="Bot.ОфисМенеджер" id="57cc763e-e06c-4106-83ab-00cd17affe56" configVersion="898d0f350523324596aceb80951b213e00000000"/>
 		<Metadata name="Bot.ОфисМенеджер.Module" id="57cc763e-e06c-4106-83ab-00cd17affe56.1" configVersion="b6dbcaa11b359f40a607f2ae1de5dc1200000000"/>
+		<Metadata name="Catalog.OTUS_Тест_1" id="830f4602-6948-455a-b141-ebdda7ba130d" configVersion="e7eafa57a7f8e0438b43080f5212213300000000"/>
 		<Metadata name="Catalog.Банки" id="50a7af31-964e-4a77-9fd7-a566017ec94f" configVersion="5db4965c435d5f40971fff6d2227cfd600000000"/>
 		<Metadata name="Catalog.Банки.Help" id="50a7af31-964e-4a77-9fd7-a566017ec94f.1" configVersion="ef30f31afd85fb4d926a50887153902f00000000"/>
 		<Metadata name="Catalog.Валюты" id="c1e015df-3ba9-4e7b-813e-cd3e8a15bf23" configVersion="e7d6a14ff9635344ad3b156c8f76575d00000000">
@@ -353,7 +354,7 @@
 		<Metadata name="CommonTemplate.КомпонентаПечатиШтрихкодовWindows32.Template" id="a0478cfc-4d22-451f-b62a-66e247ce4c49.0" configVersion="608d4d31c3a19b4d95b387d4d690084900000000"/>
 		<Metadata name="CommonTemplate.КомпонентаПечатиШтрихкодовWindows64" id="87438695-fa9a-432e-b5d2-84cc06e9ff6d" configVersion="e50158c4d76d2b40afdb79d03006d64b00000000"/>
 		<Metadata name="CommonTemplate.КомпонентаПечатиШтрихкодовWindows64.Template" id="87438695-fa9a-432e-b5d2-84cc06e9ff6d.0" configVersion="589c98b153119a498adeef17ce1b570400000000"/>
-		<Metadata name="Configuration.ДемонстрационноеПриложение" id="a3a9949e-f1f0-4b3a-821f-a85a9fb2fb3c" configVersion="308fb760b141784aad9d0b4e20b05a5b00000000"/>
+		<Metadata name="Configuration.ДемонстрационноеПриложение" id="a3a9949e-f1f0-4b3a-821f-a85a9fb2fb3c" configVersion="71c3980be2d7d040a5965872a0e8739900000000"/>
 		<Metadata name="Configuration.ДемонстрационноеПриложение.ClientApplicationInterface" id="71dad3e5-411e-4faa-9358-8eccdce47784.b" configVersion="30160f9ecb907042a37474f67e1e0c7500000000"/>
 		<Metadata name="Configuration.ДемонстрационноеПриложение.CommandInterface" id="71dad3e5-411e-4faa-9358-8eccdce47784.a" configVersion="02a5ba19f8fa814aa137cd4db607618800000000"/>
 		<Metadata name="Configuration.ДемонстрационноеПриложение.Help" id="71dad3e5-411e-4faa-9358-8eccdce47784.3" configVersion="1a46391bf3b12e4a85181298661b9b8300000000"/>
