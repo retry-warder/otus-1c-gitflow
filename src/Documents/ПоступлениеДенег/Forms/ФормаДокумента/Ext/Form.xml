@@ -41,6 +41,12 @@
 			<ContextMenu name="ПокупательКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ПокупательExtendedTooltip" id="21"/>
 		</InputField>
+		<InputField name="TST" id="26">
+			<DataPath>Объект.TST</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="TSTКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="TSTРасширеннаяПодсказка" id="28"/>
+		</InputField>
 		<InputField name="РасчетныйСчетПокупателя" id="5">
 			<DataPath>Объект.РасчетныйСчетПокупателя</DataPath>
 			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
