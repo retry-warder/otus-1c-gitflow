@@ -577,11 +577,12 @@
 		<Metadata name="DataProcessor.ЭлектроннаяПочта.Form.Форма" id="355bef34-2ae5-432b-8f8a-5b8981945188" configVersion="e67b73cdad30214c8ea9b65bfc673ce000000000"/>
 		<Metadata name="DataProcessor.ЭлектроннаяПочта.Form.Форма.Form" id="355bef34-2ae5-432b-8f8a-5b8981945188.0" configVersion="882937fe85aa4246a6284d21a7de903600000000"/>
 		<Metadata name="DataProcessor.ЭлектроннаяПочта.Help" id="12389170-189d-44b6-8684-62bb2c7998f7.1" configVersion="4a17b24883be2c49906a666a458bf78000000000"/>
-		<Metadata name="Document.Заказ" id="45403bd4-e824-44fd-b1e3-50cd17a6a658" configVersion="688f01e3a4afa84691f8bbea4a29853c00000000">
+		<Metadata name="Document.Заказ" id="45403bd4-e824-44fd-b1e3-50cd17a6a658" configVersion="014f1f9be609774f9e3b20eeecfaa06700000000">
 			<Metadata name="Document.Заказ.Attribute.Валюта" id="0078aeef-66a2-4205-8ef8-c479c569b355"/>
 			<Metadata name="Document.Заказ.Attribute.ВидЦен" id="020de809-65ca-41c7-b0b8-6646b9a55e7d"/>
 			<Metadata name="Document.Заказ.TabularSection.Товары.Attribute.Товар" id="0f8a6207-3423-4e79-8f8e-83e4c9b65b87"/>
 			<Metadata name="Document.Заказ.TabularSection.Товары.Attribute.Цена" id="1a79ad10-128e-47a2-8e61-d381d554b6f0"/>
+			<Metadata name="Document.Заказ.Attribute.TST" id="1f504540-a518-4818-942e-621c4cb42e87"/>
 			<Metadata name="Document.Заказ.Attribute.Организация" id="61cbd59a-6628-4b42-bc20-ee5adc094878"/>
 			<Metadata name="Document.Заказ.Attribute.СостояниеЗаказа" id="621aa334-88d3-4f16-a62f-ee2a0a5719f1"/>
 			<Metadata name="Document.Заказ.Attribute.Склад" id="8c2a1e2b-cdef-4f9a-87b6-a2dc33c2939e"/>
